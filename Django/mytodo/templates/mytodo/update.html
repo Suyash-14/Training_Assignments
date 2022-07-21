@@ -1,0 +1,43 @@
+  
+   <br><br>
+   <h1><b><center>My Todo App</center></b></h1> <br>
+   <h2><b><center>Update Blog!</center><b></h2>
+   <body style="background-color:grey;">
+   <form class="form group" action="" method="post">{% csrf_token %}
+       <div class="row">
+         <div class=" col-lg-6">
+           <label for="title"><center>Title </center></label> 
+         <center><input type="text" name="title" value={{title}} class="form-control"></center><br>
+         </div>
+       </div>
+ 
+       <div class="row">
+         <div class=" col-lg-6">
+           <label for="description"><center>Description</center> </label> 
+         <center><input type="text" name="description" value={{description}} class="form-control"></center><br>
+         </div>
+       </div>
+       <div class="row">
+         <div class=" col-lg-6">
+           <label for="created_date"><center>Created_date</center> </label> 
+         <center><input type="datetime-local" name="created_date" value={{created_date}} class="form-control"></center><br>
+         </div>
+       </div>
+       <div class="row">
+         <div class=" col-lg-6">
+           <label for="due_date"><center>Due_date</center> </label> 
+         <center><input type="datetime-local" name="due_date" value={{due_date}} class="form-control"></center><br>
+         </div>
+       </div>
+       <div class="row">
+        <div class=" col-lg-6">
+         <label for="status"><center>Status<center></label>
+        <center><input type="text" name="status" value={{status}} class="form-control"></center><br>
+        </div>
+       </div>
+    <br>
+    <center><input type="submit" value="Update" class="btn btn-primary"></center>
+   </form>
+   </body>
+</html>
+
